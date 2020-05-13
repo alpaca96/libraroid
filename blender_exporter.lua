@@ -44,8 +44,7 @@ getVisibleHandles = function()
 		property=sim.getObjectSpecialProperty(handles[i])
         val = sim.boolAnd32(property, sim.objectspecialproperty_renderable)
 		if val>0 then
-			simpleShapeHandles=sim.ungroupShape(handles[i])
-			--simpleShapeHandles = {handles[i]}
+			simpleShapeHandles = {handles[i]}
 			if #simpleShapeHandles>1 then
 				toRestore[#toRestore + 1] = simpleShapeHandles
 			end
