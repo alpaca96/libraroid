@@ -259,7 +259,6 @@ function sysCall_init()
             dir_lr=1
         elseif (t_pos[0]-c_pos[0]>-3 and t_pos[0]-c_pos[0]<=-1 and c_pos[0]~=0) then
             dir_lr=0
-       -- why this code doesn't work?
         elseif (t_pos[0]-0<=2 and c_pos[0]==0) then
             dir_lr=0
         else
